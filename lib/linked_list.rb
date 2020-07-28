@@ -5,15 +5,15 @@ class LinkedList
     @head = nil
   end
 
-  def append(beat)
+  def append(surname)
     if @head == nil
-      @head = Node.new(beat)
+      @head = Node.new(surname)
     else
       node = @head
     while node.next_node != nil
       node = node.next_node
     end
-      node.next_node = Node.new(beat)
+      node.next_node = Node.new(surname)
     end
   end
 
